@@ -1,5 +1,5 @@
 ---
-title: "Hugo Test"
+title: "Hugo and github pages setup"
 date: 2021-06-13T13:48:24-07:00
 ---
 
@@ -10,7 +10,7 @@ In which I try to set up github pages using Hugo.
 - Following instructions from [github pages startup](https://pages.github.com/) up to step 3   
 - Instructions from [hugo](https://gohugo.io/getting-started/quick-start/), although replacing step 3 with the alternate instructions from the [geekdoc theme](https://geekdocs.de/usage/getting-started/#option-1-download-pre-build-release-bundle)
 - Edited `./config.toml` to include the line `publishDir = "docs"`
-- hugo --minify,
+- `hugo -D`
 - push to github
 - and we are live.
 
