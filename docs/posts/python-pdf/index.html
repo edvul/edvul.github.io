@@ -2,7 +2,6 @@
 <html lang="en" class="color-toggle-hidden">
 
 <head>
-	<meta name="generator" content="Hugo 0.87.0" />
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark" />
@@ -11,11 +10,19 @@
 
 
 
-    <meta name="description" content="Random tech notes">
+    <meta name="description" content="Goal: extract text and refs from pdfs    I want to extact text and references from pdfs of scientific papers.
+In an ideal world, this would include an OCR ability for older papers, but for now, let&rsquo;s just consider modern ones that are already text.
+What&rsquo;s out there?    grobid
+in dev sciencebeam
+unmaintained allenai: science parse v1
+abandoned allenai: science parse v2
+pdfminer
+pdfextract
+Extraction benchmarks: https://github.">
 
 
 
-    <title>Random tech notes</title>
+    <title>Python Pdf | Random tech notes</title>
 
     <link rel="icon" href="/favicon/favicon-32x32.png" type="image/x-icon">
 
@@ -36,7 +43,6 @@
 <link rel="preload" href="/custom.css" as="style">
 <link rel="stylesheet" href="/custom.css" media="all">
 
-<link rel="alternate" type="application/rss+xml" href="http://edvul.github.io/index.xml" title="Random tech notes" />
 
 
 <!-- Made with Geekdoc theme https://github.com/thegeeklab/hugo-geekdoc -->
@@ -187,7 +193,7 @@
             
             
                 <span class="flex">
-                    <a href="/posts/python-pdf/" class="gdoc-nav__entry ">
+                    <a href="/posts/python-pdf/" class="gdoc-nav__entry is-active">
                         Python Pdf
                     </a>
                 </span>
@@ -225,43 +231,53 @@
 
             <div class="gdoc-page">
                 
-    
+    <article class="gdoc-markdown gdoc-post">
+      <header class="gdoc-post__header">
+        <h1 class="gdoc-post__title">Python Pdf</h1>
+        <div class="gdoc-post__date">
+            <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+            <time datetime="2021-08-20T13:28:58-07:00">
+                
+                Aug 20, 2021
+            </time>
+        </div>
+      </header>
+      <div>
+        <div class="gdoc-page__anchorwrap">
+    <h1 id="goal-extract-text-and-refs-from-pdfs">
+        Goal: extract text and refs from pdfs
+        <a data-clipboard-text="http://edvul.github.io/posts/python-pdf/#goal-extract-text-and-refs-from-pdfs" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Goal: extract text and refs from pdfs" href="#goal-extract-text-and-refs-from-pdfs">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h1>
+</div><p>I want to extact text and references from pdfs of scientific papers.</p>
+<p>In an ideal world, this would include an OCR ability for older papers, but for now, let&rsquo;s just consider modern ones that are already text.</p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="whats-out-there">
+        What&rsquo;s out there?
+        <a data-clipboard-text="http://edvul.github.io/posts/python-pdf/#whats-out-there" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor What&rsquo;s out there?" href="#whats-out-there">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p><a class="gdoc-markdown__link" href="https://github.com/kermitt2/grobid">grobid</a></p>
+<p><em>in dev</em> <a class="gdoc-markdown__link" href="https://github.com/elifesciences/sciencebeam">sciencebeam</a></p>
+<p><em>unmaintained</em> <a class="gdoc-markdown__link" href="https://github.com/allenai/science-parse">allenai: science parse v1</a></p>
+<p><em>abandoned</em> <a class="gdoc-markdown__link" href="https://github.com/allenai/spv2">allenai: science parse v2</a></p>
+<p><a class="gdoc-markdown__link" href="https://github.com/euske/pdfminer/">pdfminer</a></p>
+<p><a class="gdoc-markdown__link" href="https://github.com/CrossRef/pdfextract">pdfextract</a></p>
+<p>Extraction benchmarks:
+<a class="gdoc-markdown__link" href="https://github.com/ckorzen/pdf-text-extraction-benchmark">https://github.com/ckorzen/pdf-text-extraction-benchmark</a></p>
+<div class="gdoc-page__anchorwrap">
+    <h2 id="plan">
+        Plan
+        <a data-clipboard-text="http://edvul.github.io/posts/python-pdf/#plan" class="gdoc-page__anchor gdoc-page__anchor--right clip" aria-label="Anchor Plan" href="#plan">
+            <svg class="icon gdoc_link"><use xlink:href="#gdoc_link"></use></svg>
+        </a>
+    </h2>
+</div><p>Briefly, it seems that grobid is the most mature, maintained, and feature-rich solution.  Running it is a bit of an ordeal.  Am currently attempting to do so via the docker image, but with the complication that the image is built for amd64 and I am now on M1.</p>
 
 
-    
-
-
-
-
-
-
-<div class="gdoc-page__header flex flex-wrap
-     justify-between 
-     hidden-mobile 
-    " itemprop="breadcrumb">
-    
-    <div>
-        <svg class="icon gdoc_path hidden-mobile"><use xlink:href="#gdoc_path"></use></svg>
-        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            
-            
-            
-            
-    
-    
-        <li itemprop='itemListElement' itemscope itemtype='https://schema.org/ListItem'><span itemprop='name'>Random tech notes</span><meta itemprop='position' content='1' /></li>
-    
-
-        </ol>
-    </div>
-    
-    
-</div>
-
-    <article class="gdoc-markdown gdoc-markdown__align--left">
-        <h1>Random tech notes</h1>
-        
-
+      </div>
     </article>
 
                 

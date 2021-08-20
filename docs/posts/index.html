@@ -137,7 +137,11 @@
             <li>
             
             
-                <span class="flex">Docker R M1</span>
+                <span class="flex">
+                    <a href="/posts/docker-r-m1/" class="gdoc-nav__entry ">
+                        Docker R M1
+                    </a>
+                </span>
             
             
 
@@ -160,6 +164,30 @@
                 <span class="flex">
                     <a href="/posts/hugo-test/" class="gdoc-nav__entry ">
                         Hugo and github pages setup
+                    </a>
+                </span>
+            
+            
+
+            
+            </li>
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+
+            <li>
+            
+            
+                <span class="flex">
+                    <a href="/posts/python-pdf/" class="gdoc-nav__entry ">
+                        Python Pdf
                     </a>
                 </span>
             
@@ -199,6 +227,35 @@
     
         <article class="gdoc-markdown gdoc-post">
             <header class="gdoc-post__header">
+                <h1 class="gdoc-post__title"><a href="/posts/python-pdf/">Python Pdf</a></h1>
+                <div class="gdoc-post__date">
+                    <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
+                    <time datetime="2021-08-20T13:28:58-07:00">
+                        
+                        Aug 20, 2021
+                    </time>
+                </div>
+            </header>
+            <section>
+                Goal: extract text and refs from pdfs    I want to extact text and references from pdfs of scientific papers.
+In an ideal world, this would include an OCR ability for older papers, but for now, let&rsquo;s just consider modern ones that are already text.
+What&rsquo;s out there?    grobid
+in dev sciencebeam
+unmaintained allenai: science parse v1
+abandoned allenai: science parse v2
+pdfminer
+pdfextract
+Extraction benchmarks: https://github.
+            </section>
+            
+            <div class="gdoc-post__readmore">
+                <a class="flex-inline align-center fake-link" title="Read full post" href="/posts/python-pdf/">Read full post</a>
+            </div>
+            
+        </article>
+    
+        <article class="gdoc-markdown gdoc-post">
+            <header class="gdoc-post__header">
                 <h1 class="gdoc-post__title"><a href="/posts/docker-r-m1/">Docker R M1</a></h1>
                 <div class="gdoc-post__date">
                     <svg class="icon gdoc_date"><use xlink:href="#gdoc_date"></use></svg>
@@ -209,8 +266,14 @@
                 </div>
             </header>
             <section>
-                
+                Docker, R, M1, etc.    My goal is to build a minimal docker image on which I can auto-grade student homework. My previous arrangement used a very shoddy sandbox, and I wanted the security and reliability of a pre-built image.
+My requirements for this image are that it can run a reasonably modern version of R, including some tidyverse packages, lme4, rstan, and a few other libraries.
+One complication is that I am using an M1 macbook, and I will eventually want this image to run on an x86 server.
             </section>
+            
+            <div class="gdoc-post__readmore">
+                <a class="flex-inline align-center fake-link" title="Read full post" href="/posts/docker-r-m1/">Read full post</a>
+            </div>
             
         </article>
     
